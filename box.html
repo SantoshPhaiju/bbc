@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>something</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 70%;
+        margin: 30px auto;
+        background-color: red;
+        height: 500px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url("./assets/basic-gate-ICs.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .left {
+        background-color: black;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .left .div1 {
+        background-color: white;
+        height: 80px;
+        width: 100px;
+      }
+
+      .left .div2 {
+        background-color: rgb(234, 18, 151);
+        height: 80px;
+        width: 100px;
+      }
+
+      .right {
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="div1"></div>
+
+        <div class="div2"></div>
+      </div>
+
+      <div class="right"></div>
+    </div>
+  </body>
+</html>

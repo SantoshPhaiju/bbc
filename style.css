@@ -1,0 +1,482 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.97);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  gap: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: white;
+  gap: 8px;
+}
+
+.logo-box {
+  display: flex;
+  gap: 8px;
+}
+
+.bbox {
+  height: 35px;
+  width: 40px;
+  background: white;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon {
+  height: auto;
+  width: auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#icon {
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 8px;
+  margin-left: 10px;
+}
+
+.bar {
+  background: rgb(86, 78, 78);
+  height: 25px;
+  width: 2px;
+  margin: auto 0px;
+}
+
+.menu > a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 12px;
+  transition: all;
+  transition-duration: 300ms;
+  font-weight: 600;
+}
+
+.menu > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  color: rgb(156, 156, 13);
+}
+
+.dot {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot > div {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  color: white;
+}
+
+.search {
+  width: 300px;
+  background: rgb(30, 29, 29);
+  height: 60%;
+  margin: auto 0px;
+  color: white;
+}
+
+.searchDiv {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  height: 100%;
+  padding: 0px 16px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 8px;
+  font-size: 16px;
+  width: 100%;
+  color: white;
+}
+
+.search:hover {
+  background: rgb(69, 66, 66);
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: white;
+}
+
+.mainContainer {
+  min-height: 400px;
+  height: auto;
+  width: 90%;
+  /* border: 1px solid black; */
+  color: white;
+  margin: 0px auto;
+  padding: 16px 0px;
+}
+
+.childContainer {
+  border: 1px solid white;
+  padding: 20px;
+  text-align: justify;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  color: black;
+  padding: 10px 0px;
+  /* border: 1px solid black; */
+  margin-bottom: 40px;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.titles .welcome-title {
+  color: rgb(56, 51, 51);
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.titles .date-title {
+  color: gray;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.hero-news {
+  padding: 6px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+}
+
+.hero-news .left {
+  width: 49%;
+  height: 100%;
+  /* background: rgb(188, 173, 173); */
+  position: relative;
+}
+
+.hero-news .right {
+  /* background: rgb(188, 173, 173); */
+  width: 49%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.hero-news .right > div {
+  /* background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/230220120446-son-heung-min-021923.jpg?c=original");
+    background-size: cover; */
+  position: relative;
+  width: 48.5%;
+  height: 47%;
+  /* background: rgb(188, 173, 173); */
+}
+
+.rightImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  transition: all;
+  transition-duration: 800ms;
+}
+
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.right .content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  padding: 0px 10px;
+  padding-bottom: 10px;
+}
+
+.right .content .news-title {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 4;
+}
+
+.right .content .news-location {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  z-index: 4;
+  border-left: 1px solid red;
+  padding-left: 10px;
+}
+
+.left .content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  padding: 0px 10px;
+  padding-bottom: 10px;
+}
+
+.left .content .news-title {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  z-index: 4;
+  margin-bottom: 4px;
+}
+
+.left .content .news-short-desc {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  z-index: 4;
+  color: rgb(186, 186, 186);
+}
+
+.left .content .news-location {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  z-index: 4;
+  color: rgb(186, 186, 186);
+  border-left: 1px solid red;
+  padding-left: 10px;
+}
+
+.newsHeadingSection {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  /* border: 1px solid black; */
+}
+
+.newsheadingBar {
+  width: 2px;
+  height: 28px;
+  background-color: black;
+}
+
+.newsHeadingSection > h2 {
+  font-size: 28px;
+}
+
+.newsSectionBody {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.newsSectionBody > .newsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 32%;
+  /* border: 1px solid black; */
+  height: auto;
+}
+
+.newsSectionBody .newsCard .image {
+  width: 100%;
+  height: 250px;
+}
+
+.newsSectionBody .newsCard .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.newsCardContent {
+  padding: 12px 0px;
+}
+
+.newsCardHeading {
+  font-weight: bold;
+  font-size: 26px;
+  font-family: sans-serif;
+}
+
+.newsCardContent .newsCardDesc {
+  font-size: 20px;
+  margin-top: 8px;
+  font-family: sans-serif;
+  color: rgb(103, 103, 103);
+}
+
+.newsCardContent .newsCardLocation {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 12px;
+
+}
+
+.newsCardContent .newsCardLocation div {
+  height: 16px;
+  width: 2px;
+  background-color: red;
+  margin-right: 12px;
+}
+
+.newsCardContent .newsCardLocation span {
+  font-size: 18px;
+  color: rgb(110, 99, 97);
+}
+
+.bgTreeSection {  
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bgTreeSection img {
+  width: 100%;
+  height: 120%;
+}
+
+.contentsOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+.contentsOverlayHeading {
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contentsOverlayHeading .borderedText {
+  border: 2px solid rgb(186, 186, 6);
+  padding: 2px 12px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.contentsOverlayHeading .actionButton {
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0px 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+
+.contentsOverlayHeading .actionButton:hover {
+  background-color: rgba(0, 0, 0, 0.426);
+}
+
+.contentsOverlayHeading .actionButton  img{
+  height: 14px;
+  width: 26px;
+}

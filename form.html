@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale="">
+    <title>Form</title>
+    <style>
+      .form_body {
+        background: linear-gradient(to right, purple, deeppink);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form {
+        background: #fff;
+        height: 78vh;
+        width: 25%;
+        border-radius: 8px;
+        padding: 10px 34px;
+        box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .form h1 {
+        font-size: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px auto;
+      }
+
+      .buttons {
+        border: 1px solid rgb(176, 173, 173);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .buttons button {
+        width: 50%;
+        font-size: 22px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .login {
+        color: white;
+        border-radius: 6px;
+        background: linear-gradient(
+          to right,
+          rgb(156, 2, 156),
+          rgb(255, 0, 136)
+        );
+        padding: 12px 18px;
+      }
+
+      .formContainer {
+        padding-top: 10px;
+      }
+
+      .signup {
+        background-color: white;
+      }
+
+      .formData {
+        padding: 18px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        margin: 20px auto;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .formData > input {
+        border: 2px solid rgb(236, 235, 235);
+        width: 89%;
+        margin: 0px auto;
+        padding: 18px 18px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        border-radius: 8px;
+      }
+
+      .formData > a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(87, 87, 244);
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 2px;
+      }
+
+      .newlogin {
+        width: 100%;
+        color: white;
+        border-radius: 6px;
+        background: linear-gradient(
+          to right,
+          rgb(156, 2, 156),
+          rgb(255, 0, 136)
+        );
+        padding: 12px 18px;
+        border: none;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        margin-top: 4px;
+      }
+
+      .signupPara {
+        margin-top: 30px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      .signupPara > a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(87, 87, 244);
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 2px;
+      }
+    </style>
+  </head>
+  <body class="form_body">
+    <form class="form" action="">
+      <h1>Login Form</h1>
+
+      <div class="formContainer">
+        <div class="buttons">
+          <button class="login">Login</button>
+          <button class="signup">Signup</button>
+        </div>
+
+        <div class="formData">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+
+          <a href="/"> Forget Password? </a>
+
+          <button class="newlogin">Login</button>
+
+          <p class="signupPara">Not a member? <a href="/">Signup now</a></p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
